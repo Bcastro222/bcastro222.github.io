@@ -19,12 +19,20 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: 
+  background-image: url("assets/headerimg.jpg");
   min-height: 100%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+
+.icon-jumbo{
+  height: 64px;
+}
+
+.pointer{
+  cursor: pointer;
 }
 </style>
 </head>
@@ -34,7 +42,7 @@ body, html {
 <div class="w3-top">
   <div class="w3-bar w3-light-blue w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button w3-wide">
-        <img src ="images/logo.jpg" style = "width: 50px; height=100px")="Brigitte Castro logo"> </class> BRIGITTE CASTRO</a>
+        <img src ="assets/logo.jpg" style = "width: 50px; height=100px")="Brigitte Castro logo"> </class> BRIGITTE CASTRO</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#services" class="w3-bar-item w3-button">SERVICES</a>
@@ -62,6 +70,7 @@ body, html {
 <!-- Header with full-height image --> 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
+    <!-- <img src="assets/headerimg.jpg" width=”50px” alt="a computer"> -->
     <span class="w3-jumbo w3-hide-small">Marketing Solutions</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
     <span class="w3-large">Start marketing your business.</span>
@@ -72,10 +81,12 @@ body, html {
 <!-- Services Section -->
 <div class="w3-container" style="padding:128px 16px" id="services">
   <h3 class="w3-center"></h3>
+
   <p class="w3-center w3-large">OUR CUSTOMIZED SERVICES</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
-        <img src="assets/webdev.gif w3-margin-bottom w3-jumbo w3-center"> 
+      
+      <img src="assets/webdev.gif" class="w3-margin-bottom icon-jumbo w3-center"> 
       <p class="w3-large">Web Development</p>
       <p>Whether you need a stunning website from scratch or want to enhance your existing one, I've got you covered. I specialize in creating user-friendly, responsive, and visually appealing websites that speak your brand's language.</p>
     </div>
@@ -116,32 +127,41 @@ body, html {
   <p class="w3-center w3-large">What we've done for people</p>
 
   <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 1">
+    <div class="w3-col l3 m6 pointer" onclick="onClick(this)">
+
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" ></i>
+      <span>Case Study 1</span>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 2">
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" onclick="onClick(this)"></i>
+      <span>Case Study 2</span>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 3">
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" onclick="onClick(this)"></i>
+      <span>Case Study 3</span>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 4">
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" onclick="onClick(this)"></i>
+      <span>Case Study 4</span>
     </div>
   </div>
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 5">
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" onclick="onClick(this)"></i>
+      <span>Case Study 5</span>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 6">
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" onclick="onClick(this)"></i>
+      <span>Case Study 6</span>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 7">
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" onclick="onClick(this)"></i>
+      <span>Case Study 7</span>
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Casestudy 8">
+      <i class="fa fa-envira w3-hover-opacity pointer" aria-hidden="true" onclick="onClick(this)"></i>
+      <span>Case Study 8</span>
     </div>
   </div>
 </div>
